@@ -1,0 +1,37 @@
+.nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 18px 26px;
+  }
+
+  &__list-item {
+    display: inline-block;
+    $p-vert: .67em;
+
+    padding: .67em 0;
+    border-radius: 100ch;
+    background: transparent;
+    transition: .2s ease;
+
+    a {
+      font-weight: 400;
+      font-size: clamp(14px, -0.650rem + 1.69vw, 18px);
+      color: #FFFFFF;
+    }
+
+    &._active {
+      pointer-events: none;
+      padding: .67em 1.33em;
+      background: #262626;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        padding: .67em 1.33em;
+        background: #262626;
+      }
+    }
+  }
+}

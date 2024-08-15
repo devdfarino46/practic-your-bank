@@ -1,0 +1,7 @@
+.logo {
+  display: flex;
+
+  img {
+    height: clamp(1.625rem, 1.36rem + 1.09vw, 2.5rem);
+  }
+}

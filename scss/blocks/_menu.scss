@@ -1,0 +1,41 @@
+.menu {
+  margin-bottom: clamp(30px, -5.752rem + 8.47vw, 50px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(14px, 0.496rem + 1.56vw, 34px);
+  background: #1C1C1C;
+  border: 0px solid #262626;
+  border-radius: 20px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: .3s ease;
+
+  .nav {
+    margin-bottom: 20px;
+
+    &__list {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__list-item {
+      padding: 0;
+      background: transparent;
+      transition: .2s ease;
+
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &._active {
+    opacity: 1;
+    border-width: 1px;
+    padding: 20px clamp(14px, 0.496rem + 1.56vw, 34px);
+    max-height: 1000px;
+  }
+}

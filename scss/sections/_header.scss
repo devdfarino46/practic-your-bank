@@ -1,0 +1,39 @@
+.header {
+
+  &__container {
+  }
+
+  &__wrapper {
+    margin: clamp(30px, -5.752rem + 8.47vw, 50px) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 
+      clamp(14px, 0.761rem + 0.47vw, 20px) 
+      clamp(14px, 0.496rem + 1.56vw, 34px);
+    background: #1C1C1C;
+    border: 1px solid #262626;
+    border-radius: 100ch;
+
+    .nav {
+  
+      @media (max-width: 840px) {
+        display: none;
+      }
+    }
+  
+    .cta {
+  
+      @media (max-width: 840px) {
+        display: none;
+      }
+    }
+  
+    .burger-btn {
+  
+      @media (max-width: 840px) {
+        display: inline-flex;
+      }
+    }
+  }
+}
