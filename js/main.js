@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const exchange = document.querySelector('.exchange');
 const tabs = document.querySelectorAll('.tabs');
 const postTabs = document.querySelectorAll('.post-tabs');
+const faq = document.querySelector('.faq');
 
 if (burgerBtn && menu) {
     burgerBtn.addEventListener('click', () => {
@@ -64,3 +65,13 @@ postTabs.forEach((tab) => {
     });
   })
 });
+
+if (faq) {
+  const btn = faq.querySelector('.faq__btn');
+  const list = faq.querySelector('.faq__list');
+
+  btn.addEventListener('click', ev => {
+    list.classList.add('_opened');
+    btn.setAttribute('disabled', '');
+  })
+}
