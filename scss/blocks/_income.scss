@@ -1,0 +1,35 @@
+.income {
+  font-size: clamp(10px, 0.492rem + 0.54vw, 17px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.53em;
+  padding: 0.82em 1em;
+
+  background: #22251B;
+  border-radius: .59em;
+
+
+  svg {
+    font-size: inherit;
+    height: 2.24em;
+  }
+
+	&__text {
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+	}
+
+	&__num {
+    font-size: inherit;
+    font-weight: 400;
+    color: #FFFFFF;
+	}
+
+	&__sub {
+    font-weight: 300;
+    font-size: .82em;
+    color: #E4E4E7;
+	}
+}

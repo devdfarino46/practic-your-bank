@@ -1,0 +1,39 @@
+.post-item {
+  padding: clamp(30px, 1.496rem + 1.56vw, 50px);
+  background: #1C1C1C;
+  border: 1px solid #262626;
+  border-radius: clamp(10px, 0.587rem + 0.16vw, 12px);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: clamp(20px, 1.060rem + 0.78vw, 30px);
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: clamp(18px, 1.049rem + 0.31vw, 22px);
+    color: #FFFFFF;
+  }
+
+  &__link {
+    svg {
+      height: 1.55em;
+    }
+
+    svg path {
+      transition: .2s ease;
+    }
+
+    @media (any-hover: hover) {
+      &:hover svg path {
+        stroke: white;
+      }
+    }
+  }
+
+  &__text {
+  }
+}

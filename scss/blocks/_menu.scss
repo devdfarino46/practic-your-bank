@@ -1,5 +1,5 @@
 .menu {
-  margin-bottom: clamp(30px, -5.752rem + 8.47vw, 50px);
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   padding: 0 clamp(14px, 0.496rem + 1.56vw, 34px);
@@ -37,5 +37,6 @@
     border-width: 1px;
     padding: 20px clamp(14px, 0.496rem + 1.56vw, 34px);
     max-height: 1000px;
+    margin-bottom: clamp(30px, -5.752rem + 8.47vw, 50px);
   }
 }

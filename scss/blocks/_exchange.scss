@@ -1,0 +1,88 @@
+.exchange {
+  font-size: clamp(10px, 0.492rem + 0.54vw, 17px);
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    background: #1C1C1C;
+    border: 1px solid #262626;
+    border-radius: .35em;
+    font-size: inherit;
+  }
+
+  &__coll {
+    font-size: inherit;
+    flex: 1 0 auto;
+
+    &:first-child {
+      border-right: 1px solid #262626;
+    }
+  }
+
+  &__currency {
+    font-size: inherit;
+    border-bottom: 1px solid #262626;
+    padding: 1em;
+  }
+
+  &__currency-top {
+    font-size: inherit;
+    display: flex;
+    gap: .53em;
+    align-items: center;
+    margin-bottom: .53em;
+
+    img {
+      height: 2.06em;
+    }
+  }
+
+  &__currency-short {
+    font-weight: 400;
+    font-size: .94em;
+    color: #FFFFFF;
+  }
+
+  &__curremcy-long {
+    font-size: .82em;
+    color: #E4E4E7;
+  }
+
+  &__input {
+    padding: 1.53em 1em;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: inherit;
+
+    input {
+      background: transparent;
+      width: 5em;
+      min-width: 100%;
+      font-size: inherit;
+    }
+
+    input::placeholder {
+      color: #e4e4e7;
+    }
+  }
+
+
+
+  &__submit {
+    margin-top: 1.56em;
+    font-weight: 400;
+    font-size: clamp(9px, 0.430rem + 0.54vw, 16px);
+    color: #D1FF4D;
+    padding: .88em 1.63em;
+    background: #22251B;
+    transition: .2s ease;
+    border-radius: 100ch;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: #262626;
+      }
+    }
+  }
+}

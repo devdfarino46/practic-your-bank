@@ -3,7 +3,7 @@
 * {
   font-family: Lexend, sans-serif;
   font-weight: 300;
-  font-size: clamp(16px, 0.962rem + 0.16vw, 18px);
+  font-size: clamp(14px, 0.962rem + 0.16vw, 18px);
   line-height: 150%;
   color: #E4E4E7;
 }
@@ -21,4 +21,3 @@ html, body {
 }
 
 @import 'blocks/blocks';
-@import 'sections/sections';

@@ -1,0 +1,23 @@
+.features {
+
+		&__container {
+		}
+
+		&__title {
+      margin-bottom: 0.29em;
+
+      @media (max-width: 1260px) {
+        text-align: center;
+      }
+		}
+
+		&__descr {
+
+      @media (max-width: 1260px) {
+        text-align: center;
+      }
+		}
+
+		&__tabs {
+		}
+}
