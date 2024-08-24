@@ -4,6 +4,7 @@ const exchange = document.querySelector('.exchange');
 const tabs = document.querySelectorAll('.tabs');
 const postTabs = document.querySelectorAll('.post-tabs');
 const faq = document.querySelector('.faq');
+const testim = document.querySelector('.testim');
 
 if (burgerBtn && menu) {
     burgerBtn.addEventListener('click', () => {
@@ -31,17 +32,21 @@ tabs.forEach((tab) => {
 
   tabBtns.forEach((btn, index) => {
     btn.addEventListener('click', ev => {
-      const activeBtn = tab.querySelector('.tabs__btns .btn._active');
-      const activeContent = tab.querySelector('.tabs__content._active');
-      
-      activeBtn.classList.remove('_active');
-      activeContent.classList.remove('_active');
-
-      const attribute = btn.getAttribute('data-tab');
-      const tabContent = tab.querySelector(`.tabs__content[data-tab="${attribute}"]`);
-
-      btn.classList.add('_active');
-      tabContent.classList.add('_active');
+      if (!btn.classList.contains('_active')) {
+        console.log(22);
+        
+        const activeBtn = tab.querySelector('.tabs__btns .btn._active');
+        const activeContent = tab.querySelector('.tabs__content._active');
+        
+        activeBtn.classList.remove('_active');
+        activeContent.classList.remove('_active');
+  
+        const attribute = btn.getAttribute('data-tab');
+        const tabContent = tab.querySelector(`.tabs__content[data-tab="${attribute}"]`);
+  
+        btn.classList.add('_active');
+        tabContent.classList.add('_active');
+      }
     });
   })
 });
@@ -74,4 +79,33 @@ if (faq) {
     list.classList.add('_opened');
     btn.setAttribute('disabled', '');
   })
+}
+
+if (testim) {
+  const sliders = testim.querySelectorAll('.testim__slider');
+
+  sliders.forEach(sliderSelector => {
+    const btns = sliderSelector.querySelectorAll('.testim__slider-btn');
+    let slider = new Swiper(sliderSelector.querySelector('.swiper'), {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 40,
+      observer: true,
+      allowTouchMove: false,
+      loop: true,
+  
+      breakpoints: {
+        1420: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+          centeredSlides: true
+        }
+      },
+
+      navigation: {
+        prevEl: btns[0],
+        nextEl: btns[1]
+      }
+    });
+  });
 }
