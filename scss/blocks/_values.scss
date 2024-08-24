@@ -1,0 +1,28 @@
+.values {
+
+		&__container {
+
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__list {
+      text-align: left;
+      margin-top: clamp(50px, 2.556rem + 2.33vw, 80px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(50px, 2.556rem + 2.33vw, 80px);
+
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+      }
+		}
+}
