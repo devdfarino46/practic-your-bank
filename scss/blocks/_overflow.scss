@@ -39,11 +39,21 @@
 
       @media (max-width: 1300px) {
         border-radius: 20px;
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
         max-width: none;
         text-align: center;
       }
 		}
+
+    &_about &__content {
+      margin-bottom: clamp(101px, -26.484rem + 36.44vw, 187px);
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: clamp(14px, 0.761rem + 0.47vw, 20px);
+      color: #FFFFFF;
+    }
 
 		&__title {
       font-size: clamp(28px, 1.181rem + 2.33vw, 58px);

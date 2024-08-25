@@ -90,7 +90,6 @@ if (testim) {
       direction: 'horizontal',
       slidesPerView: 1,
       spaceBetween: 40,
-      observer: true,
       allowTouchMove: false,
       loop: true,
   
@@ -98,7 +97,6 @@ if (testim) {
         1420: {
           slidesPerView: 3,
           spaceBetween: 60,
-          centeredSlides: true
         }
       },
 

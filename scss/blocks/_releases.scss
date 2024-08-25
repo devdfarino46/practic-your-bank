@@ -1,0 +1,28 @@
+.releases {
+
+		&__container {
+      
+      @media (max-width: 980px) {
+        text-align: center;
+      }
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__content {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(20px, -2.564rem + 4.24vw, 30px);
+      margin-top: clamp(40px, 1.742rem + 3.11vw, 80px);
+
+      @media (max-width: 980px) {
+        display: flex;
+        flex-direction: column;
+      }
+		}
+}
