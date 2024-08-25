@@ -1,0 +1,27 @@
+.protect {
+
+		&__container {
+      @media (max-width: 870px) {
+        text-align: center;
+      }
+		}
+
+		&__title {
+
+		}
+
+		&__text {
+		}
+
+		&__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: clamp(40px, -0.533rem + 12.44vw, 200px);
+      gap: clamp(20px, -2.564rem + 4.24vw, 30px);
+
+      @media (max-width: 870px) {
+        display: flex;
+        flex-direction: column;
+      }
+		}
+}

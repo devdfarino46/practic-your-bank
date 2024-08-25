@@ -3,6 +3,10 @@
 		&__container {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 1130px) {
+        text-align: center;
+      }
 		}
 
 		&__title {
@@ -12,6 +16,7 @@
 		}
 
 		&__list {
+      text-align: left;
       position: relative;
       margin-top: clamp(50px, 2.556rem + 2.33vw, 80px);
       display: grid;

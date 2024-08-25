@@ -49,6 +49,10 @@
       margin-bottom: clamp(101px, -26.484rem + 36.44vw, 187px);
     }
 
+    &_security &__content {
+      margin-bottom: clamp(224px, -24.517rem + 42.80vw, 325px);
+    }
+
     &__subtitle {
       font-weight: 400;
       font-size: clamp(14px, 0.761rem + 0.47vw, 20px);

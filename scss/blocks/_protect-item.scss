@@ -1,0 +1,26 @@
+.protect-item {
+  padding: clamp(24px, 1.007rem + 2.02vw, 50px);
+  background: 
+    linear-gradient(106.06deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0) 27.86%), 
+    linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%), 
+    url(../img/bg/texture.webp) repeat;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  text-align: left;
+
+  &__top {
+    margin-bottom: clamp(18px, 1.011rem + 0.47vw, 24px);
+    display: flex;
+    gap: clamp(14px, 0.761rem + 0.47vw, 20px);
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: clamp(18px, 1.011rem + 0.47vw, 24px);
+    color: #FFFFFF;
+  }
+
+  &__text {
+  }
+}
