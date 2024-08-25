@@ -135,6 +135,15 @@
   }
 }
 
+.tag {
+  color: #B3B3B3;
+  display: inline-block;
+  padding: .44em .89em;
+  background: #1A1A1A;
+  border: 1px solid #262626;
+  border-radius: 100ch;
+}
+
 
 @import 'nav';
 @import 'btn';
@@ -155,6 +164,7 @@
 @import 'testim-item';
 @import 'values-item';
 @import 'benefits-item';
+@import 'job';
 
 @import 'header';
 @import 'footer';
@@ -168,3 +178,4 @@
 @import 'cta-sect';
 @import 'values';
 @import 'benefits';
+@import 'jobs';

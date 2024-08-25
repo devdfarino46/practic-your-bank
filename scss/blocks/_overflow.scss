@@ -64,6 +64,7 @@
         object-position: center;
         margin: clamp(14px, 0.193rem + 2.80vw, 50px);
         border-radius: 16px;
+        filter: grayscale(1);
       }
 
       @media (max-width: 1300px) {

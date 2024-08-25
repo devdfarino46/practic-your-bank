@@ -1,0 +1,28 @@
+.jobs {
+
+		&__container {
+
+      @media (max-width: 1130px) {
+        text-align: center;
+      }
+		}
+
+		&__title {
+		}
+
+		&__descr {
+		}
+
+		&__content {
+      text-align: left;
+      margin-top: clamp(60px, -3.877rem + 8.47vw, 80px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(20px, 1.060rem + 0.78vw, 30px);
+
+      @media (max-width: 1130px) {
+        display: flex;
+        flex-direction: column;
+      }
+		}
+}
