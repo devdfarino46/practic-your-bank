@@ -1,5 +1,6 @@
 const burgerBtn = document.querySelector('.burger-btn');
 const menu = document.querySelector('.menu');
+const passwInputs = document.querySelectorAll('.input_password');
 const exchange = document.querySelector('.exchange');
 const tabs = document.querySelectorAll('.tabs');
 const postTabs = document.querySelectorAll('.post-tabs');
@@ -12,6 +13,17 @@ if (burgerBtn && menu) {
         burgerBtn.classList.toggle('_active');
     });
 }
+
+passwInputs.forEach((input) => {
+  if (input) {
+    const btn = input.querySelector('button');
+    const inputEl = input.querySelector('input');
+
+    btn.addEventListener('click', () => {
+      inputEl.type = inputEl.type === 'password' ? 'text' : 'password';
+    })
+  }
+});
 
 if (exchange) {
   const input = exchange.querySelectorAll('.exchange__input input');

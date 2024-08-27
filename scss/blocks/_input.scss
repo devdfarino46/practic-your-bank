@@ -1,0 +1,34 @@
+.input {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+
+  input {
+    padding: clamp(16px, 0.848rem + 0.62vw, 24px);
+    background: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 100ch;
+    color: #e4e4e7;
+    min-width: 298px;
+
+    &::placeholder {
+      color: #59595A;
+    }
+  }
+
+  &_password input{
+    padding-right: clamp(46px, 2.648rem + 0.93vw, 58px);
+  }
+
+  &_password button {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    right: clamp(16px, 0.848rem + 0.62vw, 24px);
+
+    svg {
+      width: clamp(20px, 1.174rem + 0.31vw, 24px);
+    }
+  }
+}

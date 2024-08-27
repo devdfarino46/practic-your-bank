@@ -1,0 +1,126 @@
+.account {
+
+		&__container {
+		}
+
+		&__wrapper {
+      position: relative;
+      padding: 100px 150px;
+      max-width: clamp(1064px, -33.415rem + 111.02vw, 1326px);
+      margin: 0 auto;
+      text-align: center;
+      
+      background: url(../img/bg/texture2.webp) no-repeat center, #1C1C1C;
+      background-size: cover;
+      background-blend-mode: overlay, normal;
+      border: 1px solid #262626;
+      border-radius: 20px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background: url(../../img/bg/bg2.svg) no-repeat;
+        background-size: clamp(167px, 7.121rem + 13.61vw, 342px);
+        transform: scaleX(-1);
+      }
+
+      &>* {
+        position: relative;
+      }
+
+      @media (max-width: 1440px) {
+        padding: 80px 150px;
+      }
+
+      @media (max-width: 1050px) {
+        padding: 30px;
+      }
+		}
+
+		&__title {
+		}
+
+		&__descr {
+		}
+
+		&__form {
+      margin-top: clamp(40px, 1.742rem + 3.11vw, 80px);
+		}
+
+		&__inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px clamp(24px, -0.788rem + 2.54vw, 30px);
+
+      @media (max-width: 1050px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+		}
+
+		&__form-bottom {
+      display: flex;
+      flex-direction: column;
+      max-width: clamp(404px, -18.225rem + 48.31vw, 518px);
+      margin: 0 auto;
+
+      @media (max-width: 1050px) {
+        max-width: none;
+      }
+		}
+
+		&__form-link {
+      margin-bottom: clamp(24px, 1.197rem + 1.24vw, 40px);
+      margin-top: clamp(24px, 1.197rem + 1.24vw, 40px);
+      transition: .2s ease;
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: white;
+        }
+      }
+		}
+
+		&__form-btn {
+      margin-bottom: 24px;
+
+      &.btn_black {
+        background: #262626;
+        border: 1px solid #333333;
+      }
+		}
+
+		&__form-line-text {
+      display: flex;
+      align-items: center;
+      gap: clamp(16px, -0.525rem + 1.69vw, 20px);
+
+      &::before, &::after {
+        display: block;
+        content: '';
+        flex: 1 0 auto;
+        height: 0;
+        border-top: 1px solid #B3B3B3;
+      }
+		}
+
+		&__form-link-icons {
+      margin-top: clamp(24px, 1.386rem + 0.47vw, 30px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: clamp(20px, -0.275rem + 1.69vw, 24px);
+		}
+
+		&__form-link-icon {
+      transition: .2s ease;
+
+      @media (any-hover: hover) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+		}
+}
