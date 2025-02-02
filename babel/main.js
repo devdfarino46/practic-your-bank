@@ -1,7 +1,3 @@
-/******/ (() => { // webpackBootstrap
-/*!****************************************************!*\
-  !*** ../Portfolio/practic-your-bank/babel/main.js ***!
-  \****************************************************/
 const burgerBtn = document.querySelector('.burger-btn');
 const menu = document.querySelector('.menu');
 const passwInputs = document.querySelectorAll('.input_password');
@@ -123,6 +119,3 @@ if (testim) {
     });
   });
 }
-/******/ })()
-;
-//# sourceMappingURL=main.js.map
