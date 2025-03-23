@@ -1,5 +1,6 @@
 css/
-fontello/**/*
 js/
 *.html
 !html/**/*.html
+
+dist/
